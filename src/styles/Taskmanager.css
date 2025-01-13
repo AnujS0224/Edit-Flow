@@ -1,0 +1,172 @@
+.main-task{
+    min-height: 88.8vh;
+}
+.task-manager {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 65%;
+    max-width: 1000px; 
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.add-task input, .add-task textarea{
+    width: 98%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+.add-task select, .add-task button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.add-task button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+}
+
+.add-task button:hover {
+    background-color: #45a049;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.controls select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li.completed {
+    text-decoration: line-through;
+    background-color: #d3f9d8;
+}
+
+.task-details {
+    flex: 1;
+}
+
+button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #e53935;
+}
+
+.task-priority {
+    color: #fff;
+    padding: 3px 10px;
+    border-radius: 5px;
+}
+
+.task-priority.high {
+    background-color: #e53935;
+}
+
+.task-priority.medium {
+    background-color: #ff9800;
+}
+
+.task-priority.low {
+    background-color: #4CAF50;
+}
+
+/* Media Queries for Mobile and Tablet */
+@media (max-width: 768px) {
+    .task-manager {
+        width: 95%; /* Increase width to 95% for small screens */
+    }
+
+    header h1 {
+        font-size: 2rem; /* Adjust font size for smaller screens */
+    }
+
+    .controls {
+        flex-direction: column; /* Stack the controls vertically on smaller screens */
+        align-items: flex-start;
+    }
+
+    .controls select {
+        width: 100%; /* Full width for select inputs on small screens */
+        margin-bottom: 10px;
+    }
+
+    .task-details h3 {
+        font-size: 1.2rem; /* Make the title a bit smaller on mobile */
+    }
+
+    .task-details p {
+        font-size: 0.9rem; /* Make the description font smaller */
+    }
+
+    li {
+        flex-direction: column; /* Stack task details vertically on mobile */
+        align-items: flex-start;
+    }
+
+    button {
+        width: 100%; /* Make buttons take full width on mobile */
+        margin-bottom: 10px;
+    }
+
+    .task-priority {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Media Queries for Larger Screens (tablets, laptops) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .task-manager {
+        width: 90%; /* Adjust width for medium screens */
+    }
+
+    .controls {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    li {
+        flex-direction: row; /* Keep task items aligned horizontally on tablets/laptops */
+    }
+}

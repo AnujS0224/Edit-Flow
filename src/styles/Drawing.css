@@ -1,0 +1,78 @@
+/* style.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: linear-gradient(to right, #32a852, #85e085);
+    color: white;
+  }
+  
+  .app-name {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .header-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+  
+  .header-buttons button {
+    margin: 0 5px;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    background: white;
+    color: black;
+    transition: background-color 0.3s ease;
+  }
+  
+  .header-buttons button:hover {
+    background: lightgray;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .controls {
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .controls label {
+    margin-right: 5px;
+  }
+  
+  .drawing-canvas {
+    border: 3px double black;
+    width: 80%;
+    height: 80%;
+    background-color: #ffffff; /* Default canvas color */
+  }
+  
