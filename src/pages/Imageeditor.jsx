@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
-import "../styles/imageeditor.css"
+import "../styles/Imageeditor.css"
 
 const ImageEditor = () => {
   const canvasRef = useRef(null);
