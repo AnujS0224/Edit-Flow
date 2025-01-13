@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import "../styles/TaskManager.css"
+import "../styles/Taskmanager.css"
 import { Link } from 'react-router-dom';
 const TaskManager = () => {
   const [tasks, setTasks] = useState([]);
